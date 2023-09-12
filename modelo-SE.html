@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função SE</title>
+</head>
+<body style="background-color:grey;">
+    <font color ="#FEFA52"><h1>MODELO SE</h1></font>
+    <div id="resultado"></div> 
+    <script>
+        let idade = prompt("Qual Sua Idade?");
+        let retorno = '';
+        if (idade > 17){
+           retorno = "Maior "
+        }
+        if (idade <= 17) {
+            retorno = "Menor "
+        }
+        if (idade > 50){
+            retorno = "Velho "
+        }
+        if (idade > 90){
+            retorno = "Matusalem "
+        }   
+        document.getElementById("resultado").innerHTML= retorno + "de Idade";
+    </script>
+</body>
+</html>

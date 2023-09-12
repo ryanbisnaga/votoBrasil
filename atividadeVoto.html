@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: darkblue;">
+    <font color="#DAD55A"><h1>Você Pode Votar?</h1>
+    <div id="voto"></div>
+    <script>
+        let idade = prompt("Qual é Sua Idade?");
+        let resultado = '';
+        if (idade < 16){
+            resultado = "Você Não Pode Votar! ";
+        }
+        else if (idade < 18){
+            resultado = "Seu Voto é Opcional ";
+        }
+        else if (idade <= 65){
+            resultado = "Seu Voto é Obrigatório!!!";
+        }
+        else{
+            retorno = "Voto Opcional :)"
+        }
+        document.getElementById("voto").innerHTML="Sua Idade é " +  idade +  " , " + resultado;
+    </script>
+   
+</body>
+</html>
